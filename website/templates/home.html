@@ -11,11 +11,11 @@ Home
         <li class="list-group-item">{{ new_note.data }}</li>
     {% endfor %}
 </ul>
-<form action="POST">
+<form action="/" method="POST">
     <div align="center" class="form-group">
         <textarea name="note" id="note" class="form-control"></textarea>
         <br />
+        <button type="submit" class="btn btn-primary">Add Note</button>
     </div>
-    <button type="submit" class="btn btn-primary">Add Note</button>
 </form>
 {% endblock %}
